@@ -7,17 +7,15 @@
     font-display: swap;
 }
 
-html{
+html, body {
   background-color: #e54865;
   color: #E5B680;
-}
-
-body {
   margin: 0px;
   user-select: none;
   -moz-user-select: none;
-  height:  100%vh;
   weidth:  100vw;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 .hello {
