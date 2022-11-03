@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Chloe';
+    src: url('Chloe-Regular.woff2') format('woff2'),
+        url('Chloe-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html{
   background-color: #e54865;
   color: #E5B680;
@@ -32,7 +41,7 @@ body {
 }
 
 .clock {
-  font-family: Made;
+  font-family: Chloe;
   letter-spacing: 4px;
   font-size: 44px;
 }
