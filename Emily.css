@@ -16,6 +16,8 @@ body {
   margin: 0px;
   user-select: none;
   -moz-user-select: none;
+  height:  100%;
+  weidth:  100%;
 }
 
 .hello {
