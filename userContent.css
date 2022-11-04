@@ -1,0 +1,20 @@
+/* Newtab */
+@-moz-document url("about:blank") {
+    body {
+        background: url(images/Emily4.jpg) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+    }
+}
+
+@-moz-document url("about:newtab") {
+          body {
+              background: url(images/Emily4.jpg) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+          }
+      }
