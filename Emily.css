@@ -8,7 +8,7 @@
 }
 
 html, body {
-  background-color: #e54865;
+  background-color: #E54865;
   color: #E5B680;
   margin: 0px;
   user-select: none;
@@ -26,7 +26,7 @@ html, body {
   justify-content: center;
   flex-direction: column;
   font-family: "Chloe";
-  font-size: 44px;
+  font-size: 2vw;
   font-weight: 800;
   letter-spacing: 2px;
 }
@@ -43,13 +43,13 @@ html, body {
 .clock {
   font-family: Chloe;
   letter-spacing: 4px;
-  font-size: 44px;
+  font-size: 2vw;
 }
 
 span.emily {
   color: #f2f2f2;
   font-family: "Chloe";
-  font-size: 88px;
+  font-size: 4vw;
   font-weight: 800;
   letter-spacing: 8px;
 }
