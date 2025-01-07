@@ -253,21 +253,6 @@ body, textarea {
     body, textarea {
       font-size: 12pt; } }
 
-a {
-  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  transition: border-bottom-color 0.2s ease, color 0.2s ease;
-  color: rgba(230, 222, 214, 0.75) !important;
-  text-decoration: none;
-  }
-  
-  a:hover {
-    border-bottom-color: transparent;
-    color: #B2997A !important;
-    text-decoration: none;
-  }
-
 p {
   margin: 0 0 2em 0; }
 
@@ -280,10 +265,69 @@ h1, h2, h3, h4, h5, h6 {
     color: inherit;
     text-decoration: none; }
 
+a {
+  -moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  -ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  transition: border-bottom-color 0.2s ease, color 0.2s ease;
+  color: rgba(230, 222, 214, 0.75); /* Default color for links */
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom-color: transparent;
+  color: #B2997A;
+  text-decoration: none;
+}
+
+span.links {
+  font-size: 1.2em; /* Slightly smaller for mobile readability */
+  font-family: one_dayregular, sans-serif; /* Ensure fallback font */
+  line-height: 1.6em; /* Improve vertical spacing */
+  text-align: center; /* Center-align links */
+  display: flex; /* Use flexbox for alignment */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: center; /* Center links horizontally */
+  gap: 1em; /* Add space between links */
+  padding: 1em; /* Add padding around links */
+  margin: 0 auto;
+  max-width: 800px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+span.links a {
+  background-color: #272422; /* Dark background on hover */
+  color: #B2997A; /* Light text on hover */
+  text-decoration: none; /* Remove underlines */
+  padding: 0.5em 1em; /* Add padding for clickability */
+  border-radius: 6px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+  display: inline-block; /* Ensure proper spacing and wrapping */
+}
+
+span.links a:hover {
+  background-color: #B2997A; /* Dark background on hover */
+  color: #272422; /* Light text on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 800px) {
+  span.links {
+    font-size: 1em; /* Smaller font size on smaller screens */
+    padding: 0.5em; /* Adjust padding */
+  }
+
+  span.links a {
+    padding: 0.4em 0.8em; /* Adjust padding for smaller buttons */
+  }
+}
+
 span.name {
   font-size: 4em;
   font-family: one_dayregular;
-  line-height: 1em; }
+  line-height: 1em; 
+}
 
 span.tagline {
   font-size: 4em;
@@ -291,15 +335,9 @@ span.tagline {
   color: #E54865;
   line-height: 1em; }
 
-  span.links {
-  font-size: 1.4em;
-  font-family: one_dayregular;
-  line-height: 1.4em; 
-  text-wrap: balance;
-  }
-
-  .spacer {
-    padding: 0.8em; }
+.spacer {
+    display: none;
+}
 
 sub {
   font-size: 0.8em;
